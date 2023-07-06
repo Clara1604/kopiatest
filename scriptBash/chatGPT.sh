@@ -20,15 +20,15 @@ wget $DownloadURL
 tar -xzf ${version}.tar.gz
 
 # Déplacement des fichiers dans le dossier d'installation
-mkdir -p /bin/kopia
+#mkdir -p /bin/kopia
 #cp -r ${version}/* /bin/kopia
 
-cp -r /tmp/kopia/kopia-0.13.0-linux-arm64/* bin/kopia
+#cp -r /tmp/kopia/kopia-0.13.0-linux-arm64/* bin/kopia
 
-./kopia 
+#./kopia 
 
 # Nettoyage des fichiers temporaires
-rm -rf $TempDir
+#rm -rf $TempDir
 
 # Affichage du chemin vers l'exécutable Kopia
 echo "Kopia a été installé dans /opt/kopia"
