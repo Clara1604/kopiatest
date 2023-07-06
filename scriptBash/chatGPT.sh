@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Définition des variables
-KopiaVersion="v0.8.4"
-DownloadURL="https://github.com/kopia/kopia/releases/download/${KopiaVersion}/kopia_${KopiaVersion}_linux_x86_64.tar.gz"
+KopiaVersion="0.13.0"
+DownloadURL="https://github.com/kopia/kopia/releases/download/v${KopiaVersion}/kopia-${KopiaVersion}-linux-arm64.tar.gz"
 TempDir="/tmp/kopia"
 
 # Création du répertoire temporaire
- mkdir -p $TempDir
+mkdir -p $TempDir
 cd $TempDir
 
 # Téléchargement de Kopia
