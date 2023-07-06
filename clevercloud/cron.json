@@ -1,0 +1,6 @@
+
+/*“At 22:00 on every day-of-week from Monday through Friday.”*/
+
+[
+    "0 22 * * 1-5 /usr/bin/php $ROOT/cron.json"
+  ]
