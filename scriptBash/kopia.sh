@@ -10,8 +10,7 @@ DownloadURL="https://github.com/kopia/kopia/releases/download/v${KopiaVersion}/$
 # Création du répertoire 
 mkdir app
 cd app/
-mkdir kopia
-cd kopia/
+
 
 # Téléchargement de Kopia
 wget $DownloadURL
@@ -22,7 +21,7 @@ tar -xzf ${version}.tar.gz
 #cd ${version}/
 
 # Affichage du chemin vers l'exécutable Kopia
-echo "Kopia a été installé dans /app/kopia"
+echo "Kopia a été installé dans /app"
 
 # Exemple d'utilisation :
-echo "Pour utiliser Kopia, exécutez /app/kopia/kopia"
+echo "Pour utiliser Kopia, exécutez /app/kopia-0.13.0-linux-x6"
