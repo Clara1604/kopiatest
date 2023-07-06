@@ -2,9 +2,11 @@
 
 # Définition des variables
 KopiaVersion="0.13.0"
-version="kopia-${KopiaVersion}-linux-arm64"
+version="kopia-${KopiaVersion}-linux-x64"
 DownloadURL="https://github.com/kopia/kopia/releases/download/v${KopiaVersion}/${version}.tar.gz"
-TempDir="/tmp/kopia"
+#https://github.com/kopia/kopia/releases/download/v0.13.0/kopia-0.13.0-linux-x64.tar.gz
+#
+TempDir="tmp/kopia"
 
 
 # Création du répertoire temporaire
@@ -18,8 +20,12 @@ wget $DownloadURL
 tar -xzf ${version}.tar.gz
 
 # Déplacement des fichiers dans le dossier d'installation
-mkdir -p /opt/kopia
-cp -r ${version}/* /opt/kopia
+mkdir -p /bin/kopia
+#cp -r ${version}/* /bin/kopia
+
+cp -r /tmp/kopia/kopia-0.13.0-linux-arm64/* bin/kopia
+
+./kopia 
 
 # Nettoyage des fichiers temporaires
 rm -rf $TempDir
