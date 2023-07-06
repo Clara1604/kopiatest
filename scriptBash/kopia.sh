@@ -19,7 +19,7 @@ wget $DownloadURL
 # Extraction de l'archive
 tar -xzf ${version}.tar.gz
 
-cd ${version}/
+#cd ${version}/
 
 # Affichage du chemin vers l'exécutable Kopia
 echo "Kopia a été installé dans /app/kopia"
