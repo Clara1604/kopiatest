@@ -6,21 +6,21 @@ DownloadURL="https://github.com/kopia/kopia/releases/download/${KopiaVersion}/ko
 TempDir="/tmp/kopia"
 
 # Création du répertoire temporaire
-sudo mkdir -p $TempDir
+ mkdir -p $TempDir
 cd $TempDir
 
 # Téléchargement de Kopia
-sudo wget $DownloadURL
+wget $DownloadURL
 
 # Extraction de l'archive
-sudo tar -xzf kopia_${KopiaVersion}_linux_x86_64.tar.gz
+tar -xzf kopia_${KopiaVersion}_linux_x86_64.tar.gz
 
 # Déplacement des fichiers dans le dossier d'installation
-sudo mkdir -p /opt/kopia
-sudo cp -r kopia_${KopiaVersion}_linux_x86_64/* /opt/kopia
+mkdir -p /opt/kopia
+cp -r kopia_${KopiaVersion}_linux_x86_64/* /opt/kopia
 
 # Nettoyage des fichiers temporaires
-sudo rm -rf $TempDir
+rm -rf $TempDir
 
 # Affichage du chemin vers l'exécutable Kopia
 echo "Kopia a été installé dans /opt/kopia"
