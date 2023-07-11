@@ -7,3 +7,4 @@ cd kopia-0.13.0-linux-x64/
 
 echo "clara"
 echo "clara"
+ | grub-mkpasswd-pbkdf2
